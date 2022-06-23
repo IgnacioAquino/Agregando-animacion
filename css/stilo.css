@@ -1,0 +1,574 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.grid-container{
+    display: grid;
+    
+    grid-template-columns: 200px auto 200px auto;
+    grid-template-rows: 200px 622px 400px 85px;
+    grid-template-areas:     
+    "header header header header"
+    "article article article article"
+    "left left rigth rigth"
+    "footer footer footer footer"
+    ;
+
+}
+
+.grid-container div{
+    text-align: center;
+    border: 0.5px solid #444;
+}
+
+
+.header{
+    grid-area: header;
+    
+}
+
+.article{
+    grid-area: article;
+}
+
+.left{
+    grid-area: left;
+}
+
+.rigth{
+    grid-area: rigth;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #444
+
+}
+
+
+@media screen and (max-width: 360px){
+     
+    .grid-container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 240px 622px 400px 400px 85px;
+        grid-template-areas:     
+        "header"
+        "article"
+        "left"
+        "rigth"
+        "footer";
+    }
+
+
+    .left img{
+        width: 90%;
+    
+    }
+
+    .article h4{
+        display: none;
+    }
+
+    .navbar{
+        margin-top: 40px;
+    }
+
+    .milas{
+        display: none;
+    }
+
+    .contacto{
+        display: none;
+    }
+
+    .grid-container .title{
+        font-size: 50px;
+    }
+
+    .navbar a{
+        
+            color: whitesmoke;
+            font-size: 12px;
+            padding-left: 0;
+            padding-right: 10px;
+            
+            
+    }
+
+    .dv a{
+        color: whitesmoke;
+        font-size: 12px;
+        padding-right: 20px;
+        padding-left: 0px;
+        
+    }
+
+}
+
+
+/*FIN GRIDS*/
+
+html{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F4D03F;
+}
+
+header{
+    padding: 60px;
+    background-color: #F4D03F;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;   
+}
+
+nav a{
+    color: whitesmoke;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    font-family: rale;
+    padding-top: 60px;
+}
+
+.title{
+    color: red;
+    font-size: 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-family: rale;
+    padding-left: 15px;
+    font-weight: bold;
+
+}
+
+@font-face {
+    font-family: rale;
+    src: url(fonts/Raleway-ExtraLight.ttf);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: black;
+    height: 50px;
+
+}
+
+nav a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+nav a:hover{
+    color: #444;
+}
+
+/*FIN HEADER*/
+
+.ppp{
+    background-image: url(../img/ppp.jpg);
+    height: 620px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.ppp h4 {
+	font-size: 4rem; 
+	text-align: center; 
+    padding-top: 20px;
+	margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 1;
+}
+
+.ppp p {
+	font-size: 2.5rem; 
+	text-align: justify; 
+	text-transform: capitalize;
+	padding: 10px;
+    opacity: 1;
+}
+
+/* INICIO DE PROMOS*/
+
+h1, h3{
+    padding: 10px 0 10px;
+    color: whitesmoke;
+
+}
+
+.promo1{
+    width: auto;
+}
+
+.promo2{
+    height: 250px;
+}
+
+/*FIN PROMOS*/
+
+.dv{
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    padding: 10px 0 10px 10px;
+    
+
+}
+
+
+.dv a{
+    color: whitesmoke;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    font-family: rale;
+    padding-top: 60px;
+}
+
+
+div a:hover{
+    color: #444;
+}
+
+
+/*FIN INDEX*/
+
+.grid-container2{
+    display: grid;
+    
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: 200px 600px 85px;
+    grid-template-areas:     
+    "header header header "
+    "quini napo espe "
+    "footer footer footer "
+    ;
+}
+
+.grid-container2 div{
+    text-align: center;
+    
+
+}
+
+
+.header{
+    grid-area: header;
+    
+}
+
+.quini{
+    grid-area: quini;
+    
+}
+
+.napo{
+    grid-area: napo;
+    
+}
+
+.espe{
+    grid-area: espe;
+    
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #444
+
+}
+
+.quini, .napo, .espe{
+    padding: 60px;
+
+}
+
+@media screen and (max-width: 360px){
+     
+    .grid-container2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 400px 400px 400px 85px;
+        grid-template-areas:     
+        "header"
+        "quini"
+        "napo"
+        "espe"
+        "footer";
+    }
+
+    .grid-container2 .title{
+        font-size: 50px;
+    }
+    
+    
+    .navbar a{
+        
+        color: whitesmoke;
+        font-size: 12px;
+        padding-left: 0;
+        padding-right: 10px;
+        
+        
+    }
+
+    .dv a{
+    color: whitesmoke;
+    font-size: 12px;
+    padding-right: 20px;
+    padding-left: 0px;
+    
+    }
+
+    .milas{
+        display: none;
+    }
+
+    .contacto{
+        display: none;
+    }
+    
+    .quini img{
+        width: 95%;
+        height: 90%;
+    }
+
+    .napo img{
+        width: 95%;
+        height: 90%;
+    }
+
+    .espe img{
+        width: 95%;
+        height: 90%;
+    }
+
+}   
+
+/*FIN PIZZAS*/
+
+
+.grid-container3{
+    display: grid;
+    grid-template-columns: auto  ;
+    grid-template-rows: 200px 600px 85px;
+    grid-template-areas:     
+    "header  "
+    " empa "
+    "footer  "
+    ;
+}
+
+.header{
+    grid-area: header;
+    
+}
+
+.empa{
+    grid-area: empa;
+    
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #444
+
+}
+
+.empi{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 0 200px;
+}
+
+.empatit {
+    padding: 10px 0 0 220px;
+}
+
+.empatit2 {
+    padding: 10px 0 0 180px;
+}
+
+
+@media screen and (max-width: 360px){
+     
+    .grid-container3{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 600px 85px;
+        grid-template-areas:     
+        "header"
+        "empa"
+        "footer";
+    }
+
+    .empa{
+        grid-area: empa;
+           
+    }
+
+    .grid-container3 .title{
+        font-size: 50px;
+    }
+    
+    
+    .navbar a{
+        
+        color: whitesmoke;
+        font-size: 12px;
+        padding-left: 0;
+        padding-right: 10px;
+        
+        
+    }
+
+    .dv a{
+    color: whitesmoke;
+    font-size: 12px;
+    padding-right: 20px;
+    padding-left: 0px;
+    
+    }
+
+    .navbar{
+        margin-top: 40px;
+    }
+
+    .milas{
+        display: none;
+    }
+
+    .contacto{
+        display: none;
+    }
+
+    .empa img{
+        padding-left: 35px;
+        width: 80%;
+        height: 50%;
+    }
+
+    .empa h1 {
+        padding-left: 50px;
+    }
+
+    .empa h3 {
+        padding-left: 45px;
+    }
+
+
+}
+/*FIN EMPANADAS*/
+
+.grid-container4{
+    display: grid;
+    
+    grid-template-columns: auto auto ;
+    grid-template-rows: 200px 610px 85px;
+    grid-template-areas:     
+    "header header "
+    "sm   mnp"
+    "footer footer"
+    ;
+}
+
+.header{
+    grid-area: header;
+
+    
+}
+
+.sm{
+    grid-area: sm;
+    padding: 60px 0 0 200px;
+    justify-content: center;
+    
+    
+}
+
+.mnp{
+    grid-area:mnp;
+    padding: 60px 0 0 200px;
+    justify-content: center;
+    
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #444
+}
+
+
+
+@media screen and (max-width: 425px){
+     
+    .grid-container4{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 400px 400px 85px;
+        grid-template-areas:     
+        "header"
+        "sm"
+        "mnp"
+        "footer";
+    }
+}   
+
+/*FIN MINUTAS*/
+
+.grid-container5{
+    display: grid;
+    
+    grid-template-columns: auto  ;
+    grid-template-rows: 200px 610px 85px;
+    grid-template-areas:     
+    "header "
+    "encuesta"
+    "footer "
+    ;
+}
+
+.header{
+    grid-area: header;
+
+    
+}
+
+.encuesta{
+    grid-area: encuesta;
+   
+}
+
+
+
+.footer{
+    grid-area: footer;
+    background-color: #444
+}
+
+.encuesta{
+    padding: 40px 0 0 40px;  
+}
+
+.borderbox{
+    background-color: pink;
+}
