@@ -572,3 +572,51 @@ div a:hover{
 .borderbox{
     background-color: pink;
 }
+
+/*ANIMACION*/
+
+.title{
+    animation-name: animaciontitle;
+    animation-duration: 2s;
+    
+}
+
+@keyframes animaciontitle {
+    10%{ 
+        transform: scale(0.3);
+    }
+    
+    
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+.left{
+    animation-name: cambiarcolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambiarcolor {
+    0%{
+        background-color: pink;
+    }
+
+    50%{
+        background-color: brown;
+    }
+    100%{
+        background-color: red;
+    }
+}
+
+
+
+.rigth:hover{
+    background-color: #444;
+
+}
+
